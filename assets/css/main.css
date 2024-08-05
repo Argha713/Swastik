@@ -1566,7 +1566,7 @@ section,
 .service-details ul li {
   padding: 5px 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .service-details ul i {
