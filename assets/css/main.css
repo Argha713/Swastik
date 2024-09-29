@@ -105,8 +105,9 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 60px;
   margin-right: 8px;
+  margin-top: 4px;
 }
 
 .header .logo h1 {
@@ -731,7 +732,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   position: relative;
 }
 
@@ -768,7 +769,7 @@ section,
   width: 100%;
   min-height: 70vh;
   position: relative;
-  padding: 120px 0 60px 0;
+  padding: 100px 0 60px 0;
   display: flex;
   align-items: center;
   border-bottom: 2px solid color-mix(in srgb, var(--accent-color), transparent 75%);
@@ -876,10 +877,12 @@ section,
   list-style: none;
   padding: 0;
 }
-.about-img-div{
+
+.about-img-div {
   display: flex;
   align-items: center;
 }
+
 .about .about-content ul li {
   display: flex;
   align-items: flex-start;
@@ -933,6 +936,13 @@ section,
   height: 100%;
 }
 
+.cards-icon {
+  margin-bottom: 10px;
+  color: var(--accent-color);
+  font-size: 40px;
+  transition: 0.3s;
+}
+
 .services .service-item .icon {
   margin-bottom: 10px;
 }
@@ -948,7 +958,8 @@ section,
   margin-bottom: 15px;
   font-size: 20px;
 }
-.service-div{
+
+.service-div {
   display: flex;
   justify-content: center;
 }
@@ -1580,4 +1591,56 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+
+
+.topbar {
+  background-color: var(--accent-color);
+  padding: 2px 0;
+}
+
+.topbar .btn-try {
+  /* background-color: #4c4c78; */
+  font-size: 15px;
+  /* color: #fffefe; */
+  font-weight: 400;
+  border-radius: 15px;
+  padding: 3px 12px;
+  display: inline-block;
+  margin-left: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.topbar,
+.topbar p {
+  font-size: 15px;
+  color: #fff;
+}
+
+.topbar .contact-info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width:767px) and (orientation:portrait) {
+  .topbar {
+    text-align: center;
+  }
+
+}
+
+@media (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+
+  .topbar,
+  .topbar p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:800px) and (orientation: landscape) {
+  header.sticky-top {
+    position: static;
+  }
 }
